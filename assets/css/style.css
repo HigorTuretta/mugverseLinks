@@ -108,61 +108,12 @@
     }
 }
 
-/* background */
-
-@import "susy";
-@import "compass/reset";
-.stars, .twinkling, .clouds {
-    position: absolute;
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 7500px;
-}
-
-@media screen and (max-width:750px){
-    .stars, .twinkling, .clouds {
-        min-height: 8000px;
-    }
-}
-
-.stars {
-    z-index: 0;
-    background: #000 url('../images/stars.png') repeat top center;
-}
-
-.twinkling {
-    z-index: 1;
-    background: transparent url('../images/twinkling.png') repeat top center;
-    animation: move-twink-back 200s linear infinite;
-    
-}
-
-.clouds {
-    z-index: 2;
-    background: transparent url('../images/clouds.png') repeat top center;
-    animation: move-clouds-back 200s linear infinite;
-}
-
-@keyframes move-twink-back {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: -10000px 5000px;
-    }
-}
-
-@keyframes move-clouds-back {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 10000px 0;
-    }
+.main-section{
+    background-image: url('/assets/images/fundo.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    padding-bottom: 10vh;
 }
 
 /*  ini: produtos */
@@ -349,32 +300,23 @@
 /* ini: footer */
 
 .footer{
-    position: absolute;    
-    bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, -2%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5rem;
+    width: 100%;
+    background-color: #eee;
 }
 
 .footer-text{
-    color: white;
+    color: #1b1b1b;
     font-family: var(--bebas-neue);
     letter-spacing: 1px;
-    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    transition: all 0.3s;
 }
-.footer-text i{
-    margin: 0 5px;
-    font-size: 1.3rem;
-    color: orange;
-    
-}
-.footer-text i:first-of-type{
-    color: yellow;
-}
-
-@media screen and (max-width: 600px){
-    .footer{
-       left: 40%;
-       transform: translate(-30%, -2%);
-    }
+.footer a:hover{
+    color: rgb(58, 67, 166);
 }
 /* end: footer */
