@@ -1,107 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="shortcut icon"
-      href="assets/images/mugverse-icon-min.png"
-      type="image/x-icon"
-    />
-    <script
-      src="https://kit.fontawesome.com/5b242c111d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="assets/css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+  <link rel="shortcut icon" href="assets/images/mugverse-icon-min.png" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/5b242c111d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    <script type="text/javascript" src="assets/js/products.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9784301463878946"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <title>Mugverse - Canecas</title>
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-  <body>
-    <div class="main-section">
-      <header class="header-area">
-        <div class="logo-area">
-          <img class="img-fluid" src="assets/images/Logo02.png" />
-        </div>
-        <div class="buttons">
-          <a
-            target="_blank"
-            class="btn btn-outline-dark mb-2"
-            href="https://www.instagram.com/mugverse/"
-          >
-            <i class="fab fa-instagram"></i> Siga a gente no
-            <span class="insta">Instagram</span>
-          </a>
-        </div>
-      </header>
+  <script type="text/javascript" src="assets/js/products.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9784301463878946"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <title>Mugverse - Canecas</title>
+</head>
 
-      <!-- Search Area -->
-      <section class="campos container">
-        <div class="search-area">
-          <i class="fas fa-search"></i>
-          <input
-            type="text"
-            onkeyup="buscarProduto()"
-            placeholder="Busque algum produto..."
-            id="filter"
-            class="buscar-input"
-          />
-        </div>
-      </section>
-      <!-- Area de Produtos -->
-      <section class="produtos">
-        <div class="pCard-list"></div>
-      </section>
+<body>
+  <div class="main-section">
+    <header class="header-area">
+      <div class="logo-area">
+        <img class="img-fluid" src="assets/images/Logo02.png" />
+      </div>
+      <div class="buttons">
+        <a target="_blank" class="btn btn-outline-dark mb-2" href="https://www.instagram.com/mugverse/">
+          <i class="fab fa-instagram"></i> Siga a gente no
+          <span class="insta">Instagram</span>
+        </a>
+      </div>
+    </header>
 
-      <section class="sobre mt-5">
-        <div class="container">
-          <h1>Sobre Nós</h1>
-          <p>
-            Assim como você nós sempre tivemos uma grande paixão por todo esse
-            universo incrível que é a cultura pop, e com essa paixão nasceu
-            também a vontade de criar, participar e levar a você, um produto de
-            qualidade, e acima de tudo. da sua paixão!<br /><br />
-            <span>
-              Somos uma pequena produtora de canecas personalizadas localizada
-              em Muriaé-MG que, visa sempre a qualidade dos produtos e
-              satisfação de cada cliente. Utilizamos canecas de porcelanas
-              importadas com qualidade AAA+, a melhor encontrada no mercado,
-              junto isso com nossa impressão na mais alta resolução, sua caneca
-              fica perfeita! </span
-            ><br /><br />
-            Comprando conosco, você nos ajuda a escrever nossa história,
-            melhorar e crescer, todos os nossos produtos foram idealizados com o
-            maior carinho de alguém que você pode ter certeza, que assim como
-            você, ama o universo geek.
-          </p>
-        </div>
-      </section>      
-    </div>
-    <section class="footer">
-        <p class="footer-text">
-          Made with <i class="fa-solid fa-heart" style="color: #db0000;"></i>
+    <!-- Search Area -->
+    <section class="campos container">
+      <div class="search-area">
+        <i class="fas fa-search"></i>
+        <input type="text" onkeyup="buscarProduto()" placeholder="Busque algum produto..." id="filter"
+          class="buscar-input" />
+      </div>
+    </section>
+    <!-- Area de Produtos -->
+    <section class="produtos">
+      <div class="pCard-list"></div>
+    </section>
+
+    <!-- <section class="sobre mt-5">
+      <div class="container">
+        <h1>Sobre Nós</h1>
+        <p>
+          Assim como você nós sempre tivemos uma grande paixão por todo esse
+          universo incrível que é a cultura pop, e com essa paixão nasceu
+          também a vontade de criar, participar e levar a você, um produto de
+          qualidade, e acima de tudo. da sua paixão!<br /><br />
+          <span>
+            Somos uma pequena produtora de canecas personalizadas localizada
+            em Muriaé-MG que, visa sempre a qualidade dos produtos e
+            satisfação de cada cliente. Utilizamos canecas de porcelanas
+            importadas com qualidade AAA+, a melhor encontrada no mercado,
+            junto isso com nossa impressão na mais alta resolução, sua caneca
+            fica perfeita! </span><br /><br />
+          Comprando conosco, você nos ajuda a escrever nossa história,
+          melhorar e crescer, todos os nossos produtos foram idealizados com o
+          maior carinho de alguém que você pode ter certeza, que assim como
+          você, ama o universo geek.
         </p>
-        <a class="footer-text" href="https://www.instagram.com/mugverse/" target="_blank">Siga a gente no insta :D <i class="fa-brands fa-instagram fa-lg" style="color: #212121;"></i></a>
-      </section>
+      </div>
+    </section> -->
+    <section class="detalhes mt-5">
+      <div class="mobile-title">QUALIDADE AAA+</div>
+      <div class="text-area">
+        <p>Descubra as incríveis canecas AAA+ de cerâmica! Feitas com materiais premium, essas canecas são
+          <span class="texto-destaque">duráveis</span>,
+          <span class="texto-destaque">resistentes</span> a rachaduras e têm um <span class="texto-destaque">acabamento
+            brilhante
+          </span> e suave. <BR>
+            Além disso, são seguras spanara <span class="texto-destaque">micro-ondas e
+            lava-louças</span>. Com capacidade de isolamento térmico, suas bebidas ficarão quentes por mais tempo. Eleve
+          sua
+          experiência de tomar café, chá e outras bebidas com estilo e qualidade.
+        </p>
+      </div>
+      <div class="img-area"><img src="assets/images/Imagem01-min.png" alt="" srcset=""></div>
+    </section>
 
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+    <section class="detalhes mt-5">
+      <div class="mobile-title">CAIXINHA DE PRESENTE</div>
+      <div class="img-area"><img src="assets/images/Imagem03-min.png" alt="" srcset=""></div>
+      <div class="text-area">
+        <p>
+          Enviamos todas as nossas canecas em uma caixa LINDA, repleta de <span class="texto-destaque">mimos e brindes</span>, assim você não precisa se
+          preocupar com embalagens de presente, mesmo que o presente seja para você! 😁🤗
+        </p>
+      </div>
+
+    </section>
+
+    <section class="detalhes mt-5">
+      <div class="mobile-title">IMPRESSÃO DE ALTA QUALIDADE</div>
+      <div class="text-area">
+        <p>Nossa impressão de alta qualidade garante <span class="texto-destaque">imagens nítidas e perfeitas</span>,
+          elevando seu estilo ao próximo nível. Com uma variedade de designs exclusivos e modernos, temos opções para
+          todos os gostos e estilos.<br><br>
+          Adicione um toque de personalidade ao seu café! 😎
+        </p>
+      </div>
+      <div class="img-area"><img src="assets/images/Imagem02-min.png" alt="" srcset=""></div>
+    </section>
+  </div>
+  <section class="footer">
+    <p class="footer-text">
+      Made with <i class="fa-solid fa-heart" style="color: #db0000;"></i>
+    </p>
+    <a class="footer-text" href="https://www.instagram.com/mugverse/" target="_blank">Siga a gente no insta :D <i
+        class="fa-brands fa-instagram fa-lg" style="color: #212121;"></i></a>
+  </section>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
 </html>

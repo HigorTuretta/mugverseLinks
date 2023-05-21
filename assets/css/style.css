@@ -109,6 +109,9 @@
 }
 
 .main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-image: url('/assets/images/fundo.jpg');
     background-size: contain;
     background-repeat: repeat;
@@ -271,7 +274,7 @@
     width: 250px;
     min-width: 250px;
     padding: 10px;
-    box-shadow: rgb(14, 68, 107) 5px 5px;
+    box-shadow: #0e446b 5px 5px;
 }
 
 .buscar-input {
@@ -297,6 +300,75 @@
 }
 /* end: search */
 
+
+.detalhes{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../images/doodad.jpg');
+    background-repeat: repeat;
+    padding: 30px 0;
+    border-radius: 20px;
+    box-shadow: #0e446b -5px 5px;
+}
+
+.text-area{
+    width: 60%;
+    padding: 2rem;
+    font-family: var(--bebas-neue);
+    color: #1b1b1b;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.texto-destaque{
+    color: rgb(33, 141, 33);
+}
+.img-area{
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}
+.img-area img{
+    max-width: 30rem;
+    width: 100%;
+}
+.mobile-title{
+    display: none;
+}
+@media screen and (max-width:1280px) {
+    .text-area{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .text-area{
+        font-size: 1rem;
+    }   
+}
+
+@media screen and (max-width:550px) {
+    .text-area{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .img-area img{
+        display: none;
+    }
+    .detalhes{
+        flex-direction: column;
+    }
+    .mobile-title{
+        display: block;
+        font-family: var(--bebas-neue);
+        font-size: 4rem;
+        letter-spacing: 2px;
+        text-shadow:  #0e446b38 3px 5px;
+    }
+}
 /* ini: footer */
 
 .footer{
